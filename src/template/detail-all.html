@@ -1,0 +1,6 @@
+
+<style>
+${  require('!raw-loader!postcss-loader!less-loader!../content/detail.less')}
+ </style>
+${ require('!raw-loader!../content/detail.html')}
+<script>${ require('!raw-loader!babel-loader!../content/detail.js')}</script>
