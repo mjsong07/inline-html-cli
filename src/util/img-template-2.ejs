@@ -1,0 +1,21 @@
+<div class="floor-container">
+  <div class="row">
+      <p class="title animation-item animation">mobile </p>
+      <div class="product-text">  
+        <% lists.forEach(function(file){%><img src="<%= file.cdn %><%= file.fileNameAndExt %>" alt="<%= file.fileName %>">
+          <% })%>
+      </div>
+      <div class="product-img pc"> 
+        <% lists.forEach(function(file){%><img src="<%= file.cdn %><%= file.fileNameAndExt %>" alt="<%= file.fileName %>"> 
+        <% })%>
+      </div>
+      <div class="product-img mobile">
+        <% lists.forEach(function(file){%><img src="<%= file.cdn %><%= file.fileNameAndExt %>" alt="<%= file.fileName %>"> 
+        <% })%>
+      </div>
+      <div class="product-icon"> 
+        <% lists.forEach(function(file){%><img src="<%= file.cdn %><%= file.fileNameAndExt %>" alt="<%= file.fileName %>">
+        <% })%>
+      </div>
+  </div>
+</div>

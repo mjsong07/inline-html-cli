@@ -1,0 +1,35 @@
+<div class="floor-container">
+  <h1>pc</h1>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- 这里根据实际的情况 修改对应的模板内容 -->
+      <% lists.forEach(function(file){%><div class="swiper-wrapper"><div class="swiper-slide">
+            <img src="../static/images/products/product1/pc/<%= file.fileNameAndExt %>" alt="<%= file.fileName %>" title="<%= file.fileName %>">
+            <p>"<%= file.fileName %>"</p>
+        </div> 
+      </div>
+      <% })%>
+    </div>
+  </div>
+  <div class="swiper-button-prev"></div> 
+  <div class="swiper-button-next"></div> 
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

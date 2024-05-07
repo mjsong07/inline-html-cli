@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": { 
+  "scripts": {
     "dev": "webpack-dev-server --mode=development --config webpack.config.js",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "img-build-1": "node ./src/util/generateImgContent.js  --ejs_path=./img-template-1.ejs --imgPath=static/images/products/product1/pc/*  --cdn=http://cdn/", 
+    "img-build-2": "node ./src/util/generateImgContent.js  --ejs_path=./img-template-2.ejs --imgPath=static/images/products/product1/mobile/*  --cdn=../static/images/products/product1/mobile/" 
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,7 @@
     "copy-webpack-plugin": "^5.1.2",
     "core-js": "^3.35.1",
     "css-loader": "^2.1.1",
+    "ejs": "^3.1.8",
     "file-loader": "^6.2.0",
     "html-inline-css-webpack-plugin": "^1.8.0",
     "html-webpack-plugin": "^3.2.0",
@@ -35,6 +38,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
+    "minimist": "^1.2.8",
     "tslib": "^2.6.2"
   }
 }
