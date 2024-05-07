@@ -6,11 +6,11 @@ const ejs = require("ejs");
 const fs = require("fs");
 
 let imgTemplatePath = require('minimist')(process.argv.slice(2))['ejs_path']  //"./img-template-1.ejs"; //这里为对应要输出的模板 
-let imgPath =require('minimist')(process.argv.slice(3))['imgPath']  // "static/images/products/lush/pc/*"; //这里为遍历的图片文件夹路径
-let cdn =require('minimist')(process.argv.slice(4))['cdn']  // "static/images/products/lush/pc/*"; //这里为遍历的图片文件夹路径
+let imgPath =require('minimist')(process.argv.slice(3))['imgPath']  // "static/images/products/product1/pc/*"; //这里为遍历的图片文件夹路径
+let cdn =require('minimist')(process.argv.slice(4))['cdn']  // "http://cdn/"; //这里替换为实际的业务地址, 本地调试可以使用相对地址 ../static/images/products/product1/mobile/
 console.log("imgTemplatePath",imgTemplatePath)
 console.log("imgPath",imgPath)
-console.log("cdn",cdn) 
+console.log("cdn",cdn)  
 
 const entryFiles = glob.sync(
   imgPath 
